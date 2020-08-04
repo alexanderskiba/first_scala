@@ -1,3 +1,5 @@
+import scala.io.StdIn
+
 object exxx extends App {
 //  val message: AnyRef = "Hello Scala"
 //  val message2: Unit = message
@@ -12,9 +14,19 @@ object exxx extends App {
 
 //  val x: Unit = {}
 //  val x: AnyVal = 42
-def normalDistribution(mu: Double, sigma: Double, x: Double): Double = {
+//def normalDistribution(mu: Double, sigma: Double, x: Double): Double = {
+//
+//  val answer = (1 / (sigma * Math.sqrt(2 * Math.PI))) * (Math.pow(Math.E, -(Math.pow(x - mu, 2)) / (2 * Math.pow(sigma, 2))))
+//  answer
+//}
+//def main(args: Array[String]) {
+//val x = StdIn.readLine().toInt.toBinaryString.toStream.map(a => a.toString).count(_.equals("1"))
 
-  val answer = (1 / (sigma * Math.sqrt(2 * Math.PI))) * (Math.pow(Math.E, -(Math.pow(x - mu, 2)) / (2 * Math.pow(sigma, 2))))
-  answer
-}
+  println(StdIn.readInt.toBinaryString.count(_ == '1'))
+//  print(x)
+
+//}
+
+
+
 }
