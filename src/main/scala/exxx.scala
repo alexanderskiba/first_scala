@@ -22,10 +22,20 @@ object exxx extends App {
 //def main(args: Array[String]) {
 //val x = StdIn.readLine().toInt.toBinaryString.toStream.map(a => a.toString).count(_.equals("1"))
 
-  println(StdIn.readInt.toBinaryString.count(_ == '1'))
+//  println(StdIn.readInt.toBinaryString.count(_ == '1'))
 //  print(x)
 
+//  val s1 = "foo"; val s2 = "foo"; println(s1 == s2)
+//val s3 = "bar"; val s1 = "foo" + s3; val s2 = "foo" + s3; println(s1 eq s2)
 //}
+
+  val word = "Scala"
+  val result = ('A').isUpper
+
+  // Displays output
+  println(result)
+  val x = word(0).isUpper
+  print(x)
 
 
 
