@@ -1,3 +1,5 @@
+import java.util
+
 import scala.io.StdIn
 
 object exxx extends App {
@@ -29,13 +31,33 @@ object exxx extends App {
 //val s3 = "bar"; val s1 = "foo" + s3; val s2 = "foo" + s3; println(s1 eq s2)
 //}
 
-  val word = "Scala"
-  val result = ('A').isUpper
+//  val word = "Scala"
+//  val result = ('A').isUpper
+//
+//  // Displays output
+//  println(result)
+//  val x = word(0).isUpper
+//  print(x)
+//
+//  def main(args: Array[String]) {
+//    val x = scala.io.StdIn.readInt()
+//
+//
+//  }
+val x = scala.io.StdIn.readLine()
+val str: String = scala.io.StdIn.readLine()
+val y = x.split(' ')
+val startIndex = y(0).toInt
+val endIndex = y(1).toInt
+val sub = str.slice(startIndex, endIndex + 1).reverse
+val result = str.slice(0, startIndex)
+val res2 = str.drop(endIndex+1)
+val answer = result + sub + res2
+  println(answer)
 
-  // Displays output
-  println(result)
-  val x = word(0).isUpper
-  print(x)
+
+
+
 
 
 
