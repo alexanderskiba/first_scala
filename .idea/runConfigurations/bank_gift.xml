@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="bank_gift" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="Bank_gift" />
+    <module name="IdeaProjects" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

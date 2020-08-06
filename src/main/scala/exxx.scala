@@ -1,4 +1,5 @@
 import java.util
+import scala.util.matching.Regex
 
 import scala.io.StdIn
 
@@ -44,16 +45,22 @@ object exxx extends App {
 //
 //
 //  }
-val x = scala.io.StdIn.readLine()
-val str: String = scala.io.StdIn.readLine()
-val y = x.split(' ')
-val startIndex = y(0).toInt
-val endIndex = y(1).toInt
-val sub = str.slice(startIndex, endIndex + 1).reverse
-val result = str.slice(0, startIndex)
-val res2 = str.drop(endIndex+1)
-val answer = result + sub + res2
-  println(answer)
+  // инвертировать часть строки с startIndex до endIndex
+//val x = scala.io.StdIn.readLine()
+//val str: String = scala.io.StdIn.readLine()
+//val y = x.split(' ')
+//val startIndex = y(0).toInt
+//val endIndex = y(1).toInt
+//val sub = str.slice(startIndex, endIndex + 1).reverse
+//val result = str.slice(0, startIndex)
+//val res2 = str.drop(endIndex+1)
+//val answer = result + sub + res2
+//  println(answer)
+  // успешный успех
+
+  val x = scala.io.StdIn.readLine()
+  val reg ="^[a-z]([a-z]+_?[a-z]+)*[a-z]?$"
+  print(x.matches(reg))
 
 
 
