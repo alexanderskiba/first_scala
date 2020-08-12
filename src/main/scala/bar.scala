@@ -4,6 +4,6 @@ object bar extends App {
 
   var n = Option(1)
   var m = None
-  print(n.flatMap(d => bar(d)))
+//  print(n.flatMap(d => bar(d)))
 
 }
