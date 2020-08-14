@@ -6,7 +6,7 @@ object knumber {
     val list: List[Int] = readLine().split(" ").map(_.toInt).toList
 
     def kOrder(list: List[Int], k: Int): Int = list match {
-      case head +: tail => // матчинг для последовательностей
+      case head :: tail => // матчинг для последовательностей
         val left = tail.filter(_ <= head)
         left.length match {
           case len if len + 1 == k => head
