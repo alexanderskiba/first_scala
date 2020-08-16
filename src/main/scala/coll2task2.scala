@@ -6,4 +6,6 @@ object coll2task2 extends App {
   // .map(_._1.toInt*2).sum в мапе умножнаем каждое значение ( первый эелемент кортежа) на 2 и возвращаем сумму
   println(result)
 
+
+
 }
