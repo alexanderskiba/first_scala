@@ -25,3 +25,22 @@ def fibs(num: Int):Int = {
   }
 }
 fibs(3)
+val string = "12345678912345678900345345345"
+string.toLowerCase
+string.slice(0,20) + "..."
+
+class Flex
+case class Inher() extends Flex
+
+abstract class AbsFlex
+case class Iher2() extends AbsFlex
+
+
+
+
+
+
+
+
+
+
