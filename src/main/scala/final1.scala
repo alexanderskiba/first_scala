@@ -66,8 +66,8 @@ object final1 extends App {
   }
 
   // Main
-  def function[T: Expr]: T = X * X + 2.lit * (Y + Z * X * 2.lit) - 7.lit * Z + 4.lit
+//  def function[T: Expr]: T = X * X + 2.lit * (Y + Z * X * 2.lit) - 7.lit * Z + 4.lit
 
-  println(function[String])
-  println(function[Calc[Double]].apply(Map("x" -> 1, "y" -> -1, "z" -> 0.2)))
+//  println(function[String])
+//  println(function[Calc[Double]].apply(Map("x" -> 1, "y" -> -1, "z" -> 0.2)))
 }
